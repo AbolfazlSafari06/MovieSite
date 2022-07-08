@@ -1,0 +1,15 @@
+<ng-container *ngIf="item">
+  <a class="item">
+    <div class="item-rating">
+      <span class="app-icons">star</span>
+      <span class="item-rating-value">
+        {{ item.vote_average }}
+      </span>
+      <span>/ 10</span>
+    </div>
+    <div class="item-image">
+      <img [src]="imageSizes.small + item.poster_path" [alt]="item.name" />
+    </div>
+    <div class="item-title">{{ item.name }}</div>
+  </a>
+</ng-container>
