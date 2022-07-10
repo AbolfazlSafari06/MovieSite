@@ -25,20 +25,15 @@ export class HomeComponent implements OnInit {
     })
     this._moviesService.getMovies("popular").subscribe((response: Movie[]) => {
       this.poupularMovies = response;
-      console.log("getMovies")
     })
     this._moviesService.getMovies("top_rated").subscribe((response: Movie[]) => {
       this.topRatedMovies = response;
     })
     this._tvService.getTvs("top_rated").subscribe((response: any) => {
       this.topRatedTvs = response;
-      console.log("top_rated")
-      console.log(response)
     })
     this._tvService.getTvs("popular").subscribe((response: any) => {
       this.poupulaTvs = response;
-      console.log("popular")
-      console.log(response)
     })
   }
 

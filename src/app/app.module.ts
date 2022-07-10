@@ -17,6 +17,14 @@ import { TvService } from './service/tv/tv.service';
 import { TvBannerComponent } from './components/tv-show-banner/tv-show-banner.component';
 import { TvItemComponent } from './components/tv-show-item/tv-show-item.component';
 import { PaginatorModule } from 'primeng/paginator';
+import { MovieComponent } from './pages/movie/movie.component';
+import { TabViewModule } from 'primeng/tabview';
+import { ImageModule } from 'primeng/image';
+import { VideoEmbedComponent } from './components/video-embed/video-embed.component';
+import { CarouselModule } from 'primeng/carousel';
+import { GenrsComponent } from './pages/genrs/genrs.component';
+import { InputTextModule } from 'primeng/inputtext';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +36,21 @@ import { PaginatorModule } from 'primeng/paginator';
     ItemsBannerComponent,
     ItemComponent,
     TvBannerComponent,
-    TvItemComponent
+    TvItemComponent,
+    MovieComponent,
+    VideoEmbedComponent,
+    GenrsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     PaginatorModule,
+    ImageModule,
+    CarouselModule,
     BrowserAnimationsModule,
+    TabViewModule,
+    InputTextModule,
   ],
   providers: [MoviesService, TvService],
   bootstrap: [AppComponent]

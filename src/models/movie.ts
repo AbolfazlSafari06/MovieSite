@@ -1,3 +1,5 @@
+import { Genre } from "./genreDto";
+
 export interface Movie {
      adult: boolean;
      backdrop_path: string;
@@ -13,4 +15,8 @@ export interface Movie {
      video: boolean;
      vote_average: number;
      vote_count: number;
+     revenue: number
+     runtime: number;
+     status: string;
+     genres: Genre[];
 }

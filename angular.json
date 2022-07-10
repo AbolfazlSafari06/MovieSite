@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "MovieSite"
+  "cli": {
+    "analytics": "4e423270-28fb-432c-a22d-8d887bab2e58"
+  }
 }
